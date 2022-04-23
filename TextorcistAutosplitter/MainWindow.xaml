@@ -1,0 +1,40 @@
+﻿<Window x:Class="TextorcistAutosplitter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextorcistAutosplitter"
+        mc:Ignorable="d"
+        Title="The Textorcist AutoSplitter"
+        Width="320"
+        Height="200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="75" />
+        </Grid.RowDefinitions>
+
+        <Border Padding="30 20 30 0">
+            <StackPanel Orientation="Vertical">
+                 <!--<StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                    <DockPanel LastChildFill="True">
+                        <TextBlock DockPanel.Dock="Top" Text="Boss order:" />
+                        <ListBox x:Name="bossList" ItemsSource="{Binding Path=Bosses}" Width="200" Height="220" Margin="0 0 10 0" />
+                    </DockPanel>
+                    <StackPanel Orientation="Vertical" Width="30" VerticalAlignment="Center">
+                        <Button Grid.Row="0" x:Name="moveUpBtn" Click="MoveUpBtn_Click" Content="^" Height="40" />
+                        <Button Grid.Row="1" x:Name="moveDownBtn" Click="MoveDownBtn_Click" Content="v" Height="40" />
+                    </StackPanel>
+                </StackPanel>-->
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Keys (i.e. WASD):" />
+                        <TextBox x:Name="keysInput" Text="{Binding Path=Keys, Mode=TwoWay}" MaxLength="4" Width="120" Height="20" />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <Button Grid.Row="1" x:Name="startBtn" Click="StartBtn_Click" Content="Start" Width="100" Height="40" />
+    </Grid>
+</Window>
