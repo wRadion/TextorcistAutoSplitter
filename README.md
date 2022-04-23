@@ -4,7 +4,7 @@ These are two autosplitters that work together to be used when speedrunning the 
 
 ## Textorcist LiveSplit AutoSplitter (ASL)
 
-This is just a .asl file that can be loaded inside LiveSplit with the Scritable AutoSplitter component.
+This is just a .asl file that can be loaded inside LiveSplit with the _Scriptable AutoSplitter_ component.
 
 ### What does it do
 
